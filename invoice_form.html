@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baking Supplies</title>
+    <style>
+        table, th, td   {
+            width:1000px;border:2px solid rgb(11, 241, 142);border-radius: 10px;
+        }
+    </style>  
+</head>
+<body>
+            <h1 style="color:rgb(255, 0, 106);text-align:center">Mita's Baking Supplies</h1>
+            <h2 style="color:rgb(15, 15, 15);text-align:center">Wholesale</h2>
+
+        <form action="https://www.google.com" target="_blank" method="GET">
+            <fieldset>
+                <legend>Official Receipt</legend>
+                <div>
+                    <label>Client name:</label>
+                    <input type="text" id="clientname" name="clientname" maxlength="100" required>
+                </div>
+                <div>
+                    <label for="contact" class="contact">Contact #:</label>
+                    <input type="text" name="number" maxlength="20" placeholder="Enter Phone Number">
+                    <label for="date" class="date">Date:</label>
+                    <input type="date" id="date" name="date">
+                </div>
+            </fieldset>
+  
+<table style="width:100%;border:none;">
+    <thead>        
+       <tr style="background-color: rgb(130, 195, 245);">
+            <th style="width:50%;height:30px;background-color: rgb(130, 195, 245);">Item Description</th>
+            <th style="width:10%;background-color: rgb(130, 195, 245);">Qty</th>
+            <th style="width:30%;background-color: rgb(130, 195, 245);">Unit Price Php</th>
+            <th style="width:10%;background-color: rgb(130, 195, 245);">Amount</th>
+       </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td style="text-align:left"><textarea name="Description1" rows="1" cols="55" maxlength="100"></textarea></td>
+            <td style="text-align:left"><input type="number" id="Qty1" name="Qty1"></td>
+            <td style="text-align:left"><input type="number" id="Unit_Price1" name="UnitPrice1"></td>
+            <td style="text-align:left"><input type="number" id="Amount1" name="Amount1"></td>
+        </tr>
+        <tr>
+            <td style="text-align:left"><textarea name="Description2" rows="1" cols="55" maxlength="100"></textarea></td>
+            <td style="text-align:left"><input type="number" id="Qty2" name="Qty2"></td>
+            <td style="text-align:left"><input type="number" id="Unit_Price2" name="UnitPrice2"></td>
+            <td style="text-align:left"><input type="number" id="Amount2" name="Amount2"></td>
+        </tr>
+        <tr>
+            <td style="text-align:left"><textarea name="Description3" rows="1" cols="55" maxlength="100"></textarea></td>
+            <td style="text-align:left"><input type="number" id="Qty3" name="Qty3"></td>
+            <td style="text-align:left"><input type="number" id="Unit_Price3" name="UnitPrice3"></td>
+            <td style="text-align:left"><input type="number" id="Amount3" name="Amount3"></td>
+        </tr>
+        <tr>
+            <td style="text-align:left"><textarea name="Description4" rows="1" cols="55" maxlength="100"></textarea></td>
+            <td style="text-align:left"><input type="number" id="Qty4" name="Qty4"></td>
+            <td style="text-align:left"><input type="number" id="Unit_Price4" name="UnitPrice4"></td>
+            <td style="text-align:left"><input type="number" id="Amount3" name="Amount4"></td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td style="text-align:right">Sub Total</td>
+            <td style="text-align:center"><input type="number"></td>                
+        </tr>
+        <tr>
+            <td colspan="2"></td> 
+            <td style="text-align:right">VAT 12%</td>
+            <td style="text-align:center"><input type="number"></td>
+        </tr>
+            <td colspan="2"></td>
+            <td style="text-align:right">Total</td>   
+            <td style="text-align:center"><input type="number"></td>
+        </tr>
+    </tbody>
+          
+</table>
+
+    <fieldset>
+        <legend style="font-weight:bolder;">Additional Details</legend>
+        <label>Payment Method:</label>
+            <select name="paymentmethod" Payment Method: required>
+                <option value="">-- Select Method --</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="visa">Visa</option>
+                <option value="amex">Amex</option>
+                <option value="discover">Discover</option>
+                <option value="jbc">JBC</option>
+                <option value="gcash">GCash</option>
+                <option value="paymaya">PayMaya</option>
+            </select>
+
+<div>        
+        <input id="radio_1" type="radio" name="radio_option" value="1"/>
+        <label for="radio_1">Home</label>
+        <input id="radio_2" type="radio" name="radio_option" value="2"/>
+        <label for="radio_2">Office</label>
+</div>
+
+<div>
+    <textarea name="address" rows="4" cols="60" placeholder="Delivery address" maxlength="500" required rows="5" cols="1"></textarea>
+
+</div>
+</fieldset>
+<input type="submit" value="Submit"/>
+
+</form>
+</body>
+</html>
