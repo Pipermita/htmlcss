@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Baking Supplies</title>
+    <title>Invoice Form</title>
     <style>
         table, th, td   {
             width:1000px;border:2px solid rgb(11, 241, 142);border-radius: 10px;
@@ -9,21 +9,28 @@
     </style>  
 </head>
 <body>
-            <h1 style="color:rgb(255, 0, 106);text-align:center">Mita's Baking Supplies</h1>
-            <h2 style="color:rgb(15, 15, 15);text-align:center">Wholesale</h2>
+        <h1 style="color:rgb(121, 22, 63);text-align:center">Mita's Baking Supplies</h1>
+        <h2 style="color:rgb(29, 28, 73);text-align:center">Wholesale</h2>
 
         <form action="https://www.google.com" target="_blank" method="GET">
             <fieldset>
-                <legend>Official Receipt</legend>
+                <legend>Invoice Form</legend>
                 <div>
-                    <label>Client name:</label>
-                    <input type="text" id="clientname" name="clientname" maxlength="100" required>
+                    <label>Invoice To:</label>
+                    <input type="text" id="clientname" name="clientname" maxlength="50" required>
                 </div>
                 <div>
                     <label for="contact" class="contact">Contact #:</label>
-                    <input type="text" name="number" maxlength="20" placeholder="Enter Phone Number">
+                    <input type="text" name="number" maxlength="14" placeholder="Enter Phone Number">
                     <label for="date" class="date">Date:</label>
                     <input type="date" id="date" name="date">
+                    <label>Currency:</label>
+                    <select name="currency" Currency: required>
+                        <option value="">-- Select Method --</option>
+                        <option value="aud">AUD</option>
+                        <option value="eur">EUR</option>
+                        <option value="php">PHP</option>
+                        <option value="usd">USD</option>
                 </div>
             </fieldset>
   
@@ -85,13 +92,10 @@
         <label>Payment Method:</label>
             <select name="paymentmethod" Payment Method: required>
                 <option value="">-- Select Method --</option>
-                <option value="mastercard">Mastercard</option>
-                <option value="visa">Visa</option>
-                <option value="amex">Amex</option>
-                <option value="discover">Discover</option>
-                <option value="jbc">JBC</option>
+                <option value="cash_on_delivery">Cash On Delivery</option>
+                <option value="credit_card">Credit Card</option>
                 <option value="gcash">GCash</option>
-                <option value="paymaya">PayMaya</option>
+                <option value="paypal">PayPal</option>
             </select>
 
 <div>        
@@ -102,7 +106,7 @@
 </div>
 
 <div>
-    <textarea name="address" rows="4" cols="60" placeholder="Delivery address" maxlength="500" required rows="5" cols="1"></textarea>
+    <textarea name="address" rows="4" cols="60" placeholder="Delivery address" maxlength="300" required rows="5" cols="1"></textarea>
 
 </div>
 </fieldset>
