@@ -47,54 +47,99 @@ section.about-me{
 
 .about-me p {
    font-size: 18px;
-   line-height: 15px;
+   line-height: 25px;
    text-align: justify;
 }
 
 h4{
    width: 150px; border: 5px; border-radius: 10px;
-   line-height: 10px;
+   line-height: 12px;
    color: rgb(12, 15, 26);
    text-align: center;
    font-size: 45;
 }
 
 section.my-portfolio div{
-   background-color: rgb(245, 239, 234);
-   font-style: italic; color: black;
-   height: 40px;
-   border: 1px solid rgb(243, 178, 171);
+   background-color: aliceblue;
 }
+
 .d-none{
    display: none;
 }
 
 .d-inline{
-   display: inline;
-   background-color: blanchedalmond;
+   display: inline-block; 
+   background-color: aquamarine;
 }
 .d-flex{
-   width:100px; border: border-radius: 10px;
-   line-height: 20px;
    display: flex;
 }
 
 .d-inline.d2{
-   width:100px; border:2px; border-radius: 10px;
-   display: inline-block;
-   background-color: cadetblue;
-}
-.d-none, .d-inline {
-   font-size: 16px;
+   width: 300px;
+   display: inline-block; 
+   background-color: bisque;
 }
 
-section .d-inline{
+section>div>.d-inline{
+   color: burlywood;
+}
+
+.with-direction{
+   flex-direction: row;
+   flex-wrap: nowrap;
+}
+.with-direction>div{
+   height: 40px;
+   text-align: center;
+}
+
+.d12{
+   order: 5;
+   flex-grow: 1;
+}
+
+.d13{
+   order: 1;
+   flex-grow: 1;
+}
+
+.d14{
+   order: 2;
+   flex-grow: 2;
+}
+
+section.my-portfolio div.d-flex{
+   flex-wrap: wrap;
+   justify-content: center;
+   font-style: italic; 
+   color: black;
+   border: 1px solid rgb(243, 178, 171);
+}
+.d-none>.d-inline {
+   display: inline-block;
+   width: 180px;
+   padding: 15px;
+   color: brown;
+   background-color: azure;
+   box-shadow: 5px 10px #fff;
+   border-radius: 4px;
+}
+
+section.my-portfolio .d-flex h4{
+   min-height: 60px;
+}
+
+section.my-portfolio .d-flex p{
+   font-size: 14px;
+}
+section>div>.d-inline{
    width:1000px; border:2px; border-radius: 10px;
    color: coral;
 }
 
 section .d-inline{
-   width:1000px;border:2px; border-radius: 10px;
+   width:1000px; border:2px; border-radius: 10px;
    color: cornsilk;
 }
 
