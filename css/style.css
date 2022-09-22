@@ -53,7 +53,7 @@ section.about-me{
 
 h4{
    width: 150px; border: 5px; border-radius: 10px;
-   line-height: 12px;
+   line-height: 15px;
    color: rgb(12, 15, 26);
    text-align: center;
    font-size: 45;
@@ -61,6 +61,7 @@ h4{
 
 section.my-portfolio div{
    background-color: aliceblue;
+   justify-content: center;
 }
 
 .d-none{
@@ -68,11 +69,13 @@ section.my-portfolio div{
 }
 
 .d-inline{
-   display: inline-block; 
+   display: inline; 
    background-color: aquamarine;
 }
+
 .d-flex{
    display: flex;
+   
 }
 
 .d-inline.d2{
@@ -81,14 +84,23 @@ section.my-portfolio div{
    background-color: bisque;
 }
 
+section .d-inline{
+   color: cornsilk;
+}
+
+section>.d-inline{
+   color: blueviolet;
+}
+
 section>div>.d-inline{
-   color: burlywood;
+   color: blue;
 }
 
 .with-direction{
    flex-direction: row;
    flex-wrap: nowrap;
 }
+
 .with-direction>div{
    height: 40px;
    text-align: center;
@@ -109,40 +121,38 @@ section>div>.d-inline{
    flex-grow: 2;
 }
 
+.d15{
+   order: 4;
+   flex-grow: 1;
+}
+
+.d16{
+   order: 3;
+   flex-grow: 3;
+}
+
 section.my-portfolio div.d-flex{
    flex-wrap: wrap;
-   justify-content: center;
-   font-style: italic; 
-   color: black;
-   border: 1px solid rgb(243, 178, 171);
+   
 }
-.d-none>.d-inline {
-   display: inline-block;
-   width: 180px;
+.d-flex>.d-inline {
+   display: inline;
+   width: 180px; height: 400px;
+   color: rgb(19, 15, 15);
+   background-color: rgb(71, 133, 133);
    padding: 15px;
-   color: brown;
-   background-color: azure;
-   box-shadow: 5px 10px #fff;
-   border-radius: 4px;
+   margin: 15px;
+   box-shadow: 5px 5px rgb(66, 2, 2);
+   border-radius: 2px;
 }
 
 section.my-portfolio .d-flex h4{
-   min-height: 60px;
+   min-height: 30px;
 }
 
 section.my-portfolio .d-flex p{
    font-size: 14px;
 }
-section>div>.d-inline{
-   width:1000px; border:2px; border-radius: 10px;
-   color: coral;
-}
-
-section .d-inline{
-   width:1000px; border:2px; border-radius: 10px;
-   color: cornsilk;
-}
-
 
 .basic-grid,
 .advance-grid {
