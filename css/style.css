@@ -3,7 +3,6 @@ body{
    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .page-wrapper {
-   max-width: 1024px;
    background-color: rgb(192, 247, 228);
    margin: auto;
    padding: 15px 15px 15px 15px;
@@ -62,15 +61,15 @@ section.about-me{
 }
 
 h4{
-   width: 150px; border: 5px; border-radius: 10px;
    line-height: 20px;
-   color: rgb(12, 15, 26);
+   color: rgb(51, 61, 94);
    text-align: center; 
    font-size: 20px; font-weight: 100;
 }
 
 section.my-portfolio div{
-   background-color: aliceblue;
+   background-color: rgb(233, 211, 227);
+   padding-top: 2px;
    justify-content: center;
 }
 
@@ -79,8 +78,9 @@ section.my-portfolio div{
 }
 
 .d-inline{
-   display: inline; 
+   display: inline;
    background-color: aquamarine;
+   
 }
 
 .d-flex{
@@ -98,22 +98,25 @@ section .d-inline{
    color: cornsilk;
 }
 
-section>.d-inline{
-   color: blueviolet;
-}
-
 section>div>.d-inline{
    color: blue;
 }
 
-.with-direction{
+section>.d-inline{
+   color: blueviolet;
+}
+
+.with-direction {
    flex-direction: row;
-   flex-wrap: nowrap;
+   flex-wrap: wrap;
+   display: flex;
 }
 
 .with-direction>div{
    height: 40px;
-   text-align: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+   display: flex;
 }
 
 .d12{
@@ -142,8 +145,14 @@ section>div>.d-inline{
 }
 
 section.my-portfolio div.d-flex{
+   background-color: bisque;
+   line-height: 50px;
+   height: 100%;
+   justify-content: center;
+   padding: 1px;
    flex-wrap: wrap;
-   
+   border-radius: 20px;
+   box-shadow: 4px 4px #33333ccc, 8px 8px #ccc;
 }
 .d-flex>.d-inline {
    display: inline;
@@ -242,8 +251,7 @@ section.my-portfolio .d-flex p{
 
 nav ul {
    list-style: none;
-   margin: 0;
-   
+   margin: 0;  
 }
 
 nav ul li{
@@ -277,7 +285,6 @@ nav ul li:hover{
          display: block;
    }
 }
-
 
 @media screen and (max-width: 600px) {
    .banner{

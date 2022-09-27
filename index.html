@@ -2,9 +2,9 @@
 <html>
 <head>
     <title>Normita M. Burce</title>
+    <link href="css/style.css" rel="stylesheet"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
-    <link href="css/style.css" rel="stylesheet">
     <script src="js/bootstrap.min.js" type="javascript"></script>
 
     <style>
@@ -17,10 +17,9 @@
             right: -40px;
             }
         
-        .work-education {
-            margin-left: 50px;
+        .row p {
+            border-width: 1px; background-color: thistle; border-color: black;
         }
-
     </style>
 
 </head>
@@ -56,7 +55,7 @@
                 <h3 class="text-center mb-5">My Portfolio</h3>
                     <div class="row g-4">
                         <div class="col-sm-3">
-                            <div class="card" style="width: 200px; height: 500px; background-color: aqua; background-size: 5px;">
+                            <div class="card" style="border-width: 5px; border-radius: 5px; width: 200px; height: 500px; background-color: rgb(30, 32, 32); background-size: 5px;">
                                 <div class="card-body">
                                     <h4 class="card-title">Themed and Customized Cakes</h4>
                                     <p class="card-text">Cake is a flour confection made from flour, sugar, and other ingredients, and is usually baked. In their oldest forms, cakes were modifications of bread, but cakes now cover a wide range of preparations that can be simple or elaborate, and which share features with desserts such as pastries, meringues, custards, and pies.</p>
@@ -64,7 +63,7 @@
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="card" style="width: 200px; height: 500px; background-color: aqua; background-size: 5px;">
+                            <div class="card" style="border-width: 5px; border-radius: 5px; width: 200px; height: 500px; background-color: rgb(30, 32, 32); background-size: 5px;">
                                 <div class="card-body">
                                     <h4 class="card-title">Cookies, Brownies & Pies</h4>
                                     <p class="card-text">Pastry is baked food made with a dough of flour, water and shortening that may be savoury or sweetened. Sweetened pastries are often described as bakers' confectionery.</p>
@@ -72,7 +71,7 @@
                             </div>
                         </div>   
                         <div class="col-sm-3">
-                            <div class="card" style="width: 200px; height: 500px; background-color: aqua; background-size: 5px;">
+                            <div class="card" style="border-width: 5px; border-radius: 5px; width: 200px; height: 500px; background-color: rgb(30, 32, 32); background-size: 5px;">
                                 <div class="card-body">
                                     <h4 class="card-title">Handmade Breads</h4>
                                     <p class="card-text">Bread is a staple food prepared from a dough of flour and water, usually by baking. Throughout recorded history and around the world, it has been an important part of many cultures' diet.</p>
@@ -80,25 +79,23 @@
                             </div>
                         </div>
                         <div class="col-sm-3">
-                            <div class="card" style="width: 200px; height: 500px; background-color: aqua; background-size: 5px;">
+                            <div class="card" style="border-width: 5px; border-radius: 5px; width: 200px; height: 500px; background-color: rgb(30, 32, 32); background-size: 5px;">
                                 <div class="card-body">
                                     <h4 class="card-title">Iced Coffee & Teas</h4>
                                     <p class="card-text">Concoction is the process of preparing a medicine, food or other substance out of many ingredients, and also the result of such a process. Historically, the word referred to digestion, as conceived by Aristotle who theorized that this was the result of the heat of the body acting upon the material, causing it to mature and ripen.</p>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row g-6">
                         <div class="col-sm-3">
-                            <div class="card" style="width: 200px; height: 500px; background-color: aqua; background-size: 5px;">
+                            <div class="card" style="border-width: 5px; border-radius: 5px; width: 200px; height: 500px; background-color: rgb(30, 32, 32); background-size: 5px;">
                                 <div class="card-body">
                                     <h4 class="card-title">CSS Flexbox</h4>
                                     <p class="card-text">CSS Flexible Box Layout, commonly known as Flexbox, is a CSS 3 web layout model. It is in the W3C's candidate recommendation stage. The flex layout allows responsive elements within a container to be automatically arranged depending on viewport size.</p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="card" style="width: 200px; height: 500px; background-color: aqua; background-size: 5px;">
+                        <div class="col-sm-3">
+                            <div class="card" style="border-width: 5px; border-radius: 5px; width: 200px; height: 500px; background-color: rgb(30, 32, 32); background-size: 5px;">
                                 <div class="card-body">
                                     <h4 class="card-title">CSS Grid Layout</h4>
                                     <p class="card-text">In Cascading Style Sheets, CSS grid layout or CSS grid creates complex responsive web design grid layouts more easily and consistently across browsers. Historically, there have been other methods for controlling web page layout methods, such as tables, floats, and more recently, CSS Flexible Box Layout.</p>
@@ -109,28 +106,74 @@
             </div>
         </section>
 
-        <section class="work-education">
-            <h3>Work Experience</h3>
-            <ul>
-                <li>Baker/Cook</li>
-                    <p>Homebased Bakeshop</p>
-                <li>Barista Trainor</li>
-                    <p>Caffe Pascucci Shop</p>
-                <li>Assistant Store Manager</li>
-                    <p>Costa Coffee Bahrain</p>
-                <li>Senior Barista/Coffee Master</li>
-                    <p>Starbucks Coffee Philippines</p>
+        <section class="work-experience">
+            <div class="container pt-5 pb-5">
+            <h3 class="text-center mb-5" style="font-size: 40px;">Work Experience</h3>
+            
+                <div class="row">
+                    <div class="col text-end">
+                        <p style="font-size: 25px;">Baker/Cook</p>
+                        <p style="font-size: 20px;">Homebased Bakeshop</p>
+                    </div>
+                    <div class="col"></div>          
+                </div>
+                <div class="row">
+                    <div class="col order-last">
+                        <p style="font-size: 25px;">Barista Trainor</p>
+                        <p style="font-size: 20px;">Caffe Pascucci Shop</p>
+                    </div>
+                    <div class="col"></div>          
+                </div>
+                <div class="row">
+                    <div class="col text-end">
+                        <p style="font-size: 25px;">Assistant Store Manager</p>
+                        <p style="font-size: 20px;">Costa Coffee Bahrain</p>
+                    </div>
+                    <div class="col"></div>          
+                </div>
+                <div class="row">
+                    <div class="col order-last">
+                        <p style="font-size: 25px;">Senior Barista/Coffee Master</p>
+                        <p style="font-size: 20px;">Starbucks Coffee Philippines</p>
+                    </div>
+                    <div class="col"></div>          
+                </div>
+        </section>        
    
-            </ul>
-            <h3> Educational Attainment</h3>
-            <ul>
-                <li>Web Development</li>
-                <li>BS Nursing</li>
-                <li>Associate in Dental Medicine</li>
-   
-            </ul>
+        <section class="education">
+            <div class="container pt-5 pb-5">
+            <h3 class="text-center mb-5" style="font-size: 40px;">Educational Attainment</h3>
+            
+                <div class="row">
+                    <div class="col text-end">
+                        <p style="font-size: 25px;">Full Stack Development</p>
+                        <p style="font-size: 20px;">KodeGo</p>
+                    </div>
+                    <div class="col"></div>          
+                </div>
+                <div class="row">
+                    <div class="col order-last">
+                        <p style="font-size: 25px;">BS Nursing</p>
+                        <p style="font-size: 20px;">University of Perpetual Help System-Laguna</p>
+                    </div>
+                    <div class="col"></div>          
+                </div>
+                <div class="row">
+                    <div class="col text-end">
+                        <p style="font-size: 25px;">Associate in Dental Medicine</p>
+                        <p style="font-size: 20px;">University of Perpetual Help System-Laguna</p>
+                    </div>
+                    <div class="col"></div>          
+                </div>
+                <div class="row">
+                    <div class="col order-last">
+                        <p style="font-size: 25px;">High School</p>
+                        <p style="font-size: 20px;">University of Perpetual Help System-Laguna</p>
+                    </div>
+                    <div class="col"></div>          
+                </div>
         </section>
-
+            
           <a>Link to Facebook</a>
           <a>Link to LinkedIn</a>
           <a>Link to IG</a>
