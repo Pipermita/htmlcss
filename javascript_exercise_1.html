@@ -1,0 +1,56 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Exercise 1</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <script type="text/javascript" src="js/kodego.js"></script>
+    </head>
+    <body>
+
+        <h2>Machine 1</h2>
+
+        <input type="number" id="number" value="" placeholder="Input Number"/>
+        
+        <button onclick="CheckNumber()">Check Number</button>
+
+        <div id="result1"></div>
+
+        <script>
+            function CheckNumber(){
+                let value = parseInt(document.getElementById("number").value);
+                
+                if (value % 2 === 0) {
+                    document.getElementById("result1").innerHTML="Even";
+                }else {
+                    document.getElementById("result1").innerHTML="Odd";
+                }
+            }
+        </script>
+
+
+        <h2>Machine 2</h2>
+
+        <input type="text" id="single_char" value="" placeholder="Input letter" maxlength="1"/>
+
+        <button onclick="CheckLetter()">Check Letter</button>
+
+        <div id="result2"></div>
+
+        <script>
+            function CheckLetter(){
+                let value1 = parseInt(document.getElementById("single_char").value);
+                                
+                if (value1 == 'a' || value1 == 'e' || value1 == 'i' || value1 == 'o' || value1 == 'u' || value1 == 'A' || value1 == 'E' || value1 == 'I' || value1 == 'O' || value1 == 'U') {
+                    document.getElementById("result2").innerHTML="Vowel";
+                }else {
+                    document.getElementById("result2").innerHTML="Consonant";
+                }
+            }
+        </script>
+
+
+    </body>
+
+</html>

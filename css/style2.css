@@ -1,0 +1,97 @@
+body{
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', 'Tangerine', serif;
+ }
+  
+ .page-wrapper {
+    background-image: url('../Images photo/baking wallpaper2.jpg');
+    background-color: rgb(223, 243, 236);
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+ }
+ 
+ .page-wrapper2 {
+    background-image: url('../Images photo/baking wallpaper4.jpg');
+    background-color: rgb(223, 243, 236);
+    background-size: cover;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+ }
+
+ .page-wrapper3 {
+    background-image: url('../Images photo/baking wallpaper.jpg');
+    background-color: rgb(223, 243, 236);
+    background-size: cover;
+    margin: 0;
+    padding: 5px 5px 5px 5px;
+ }
+
+ header {
+    height: 25px;
+    width: 100%;
+    background-color: rgb(250, 215, 215);
+    position: fixed;
+    border-top: 50px;
+    left: 0px;
+    right: 0px;
+    top: 70px;
+    z-index: 99999;
+ }
+
+ nav ul {
+   list-style: none;
+   margin: 0;  
+ }
+
+ nav ul li{
+   display: inline-block;
+   padding: 0px 5px;
+ }
+
+ nav ul li a {
+   text-decoration: none;
+   color: rgb(179, 109, 11);
+   position: relative; bottom: 8px;
+   left: 800px;
+   line-height: 10px;
+   font-weight: 600;
+ }
+
+ nav ul li:hover a{
+   color: rgb(241, 88, 119);
+ }
+
+ .container {
+  margin-top: 30px;
+}
+
+.col-sm-4 {
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.col-sm-8 {
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+} 
+
+@media screen and (max-width: 992px) {
+  header { 
+     height: auto;
+     position: absolute; 
+     background-color: #33333ccc;}
+  
+  nav ul li{
+        display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .banner{
+     background-image: none;
+     display: none;}
+     }
+  

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Intro to Javascript</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <script type="text/javascript" src="js/kodego.js"></script>
+
+        <style>
+            .container {
+                border: 1px saddlebrown;
+                height: 30px;
+                padding: 15px;
+            }
+
+            .yellow {
+                background-color: yellow;
+            }
+
+            .green {
+                background-color: green;
+            }
+
+            .blue {
+                background-color: blue;
+            }
+        </style>
+
+        <script>
+            document.write("<h2>I'm a JavaScript output Start.</h2>");
+            var uwu = document.write('uwu');
+            var x = 10
+            var x = 20
+            var x = 30
+            console.log ("test " + x);
+            
+            let y = 10;
+            y = 20;
+            let z = 20;
+
+            console.log ("string " + y + z);
+
+            const pi = 3.1416;
+
+            document.write( 1 + 2 * 3 );
+            document.write( (1 + 2) * 3 );
+            document.write( (1 + 2) * 3 / 3 );
+            document.write( 22 % 3 );
+            document.write( y++ );
+            document.write( y );
+            document.write( z-- );
+            document.write( z );
+
+            x += 1;
+            x -= 1;
+            x *= 1;
+            document.write ( x );
+            document.write("<br>");
+            document.write( x ** y);
+
+            var formula = "20 + (x + y) * 40 / z"; 
+
+
+            //document.write(x);
+            // console.log("test" + x);
+
+
+        </script>
+
+
+    </head>
+    <body id="main">
+        <div class="container" id="main-container"></div>
+        <div class="container" id="main-container1"></div>
+        <div class="container" id="main-container2"></div>
+        <div class="container" id="main-container3"></div>
+        <div class="container" id="main-container4">
+            <button onclick="onClickSmall()">Small</button>
+            <button onclick="onClickMedium()">Medium</button>
+            <button onclick="onClickLarge()">Large</button>     
+        </div>
+
+        <input id="dynamic-input" type="text" name="" value="">
+    
+        <ul>
+            <li data-id="1">Chris Evans</li>
+            <li data-id="2">Scarlet Johanson</li>
+            <li data-id="3">Chris Hemsworth</li>
+            <li data-id="4">Robert Downey Jr.</li>
+            <li data-id="5">Mark Ruffalo</li>
+            <li data-id="6">Jeremy Rener</li>
+
+        </ul>
+
+    </body>
+
+        <script>
+            document.write("I'm a Javascript output in the middle.");
+        </script>
+
+    <script>
+        document.getElementById("main-container").innerHTML = "Hello Javasrcipt";
+        document.getElementById("main-container1").innerHTML = "I'm a dynamic text content";
+        document.getElementById("main-container2").innerHTML = "My name is Adele";
+        document.getElementById("main-container3").innerHTML = "<h1>I'm an H1 Element</h1>";
+            
+        function concatenateString(string1, string2){
+            let y = 50;
+            document.write(string1 + ""+ string2 + y);
+        }
+                
+        function onClick() {
+            document.getElementById("main-container1").innerHTML = "Button has been clicked.";
+            document.getElementById("main-container1").style.fontSize = "32px";
+        }
+
+        function onClickSmall() {
+            document.getElementById("main-container1").innerHTML = "I'm a Small dynamic text content";
+            document.getElementById("main-container1").style.fontSize = "10px";
+            document.getElementById("main-container2").setAttribute ("class", "yellow");
+            document.getElementById("main-container3").style.display = "none";
+        }
+
+        function onClickMedium() {
+            document.getElementById("main-container1").innerHTML = "I'm a Medium dynamic text content";
+            document.getElementById("main-container1").style.fontSize = "22px";
+            document.getElementById("main-container2").setAttribute ("class", "green");
+            document.getElementById("main-container2").setAttribute ("data-id", "22");
+            document.getElementById("dynamic-input").setAttribute ("type", "password");
+            document.getElementById("dynamic-input").setAttribute ("name", "password");
+            document.getElementById("dynamic-input").setAttribute ("maxlength", "20");
+        }
+
+        function onClickLarge() {
+            document.getElementById("main-container1").innerHTML = "I'm a Large dynamic text content";
+            document.getElementById("main-container1").style.fontSize = "34px";
+            document.getElementById("main-container2").setAttribute ("class", "blue");
+            document.getElementById("main-container3").style.display = "flex";
+            document.getElementById("dynamic-input").setAttribute ("type", "date");
+            document.getElementById("dynamic-input").setAttribute ("name", "input_date");
+            document.getElementById("dynamic-input").setAttribute ("maxlength", "20");
+        }
+
+        document.write("I'm a JavaScript output.");
+
+        concatenateString("Hello", "Mita")
+
+
+    </script>
+
+   
+
+</html>

@@ -1,0 +1,37 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript Conditions</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <script type="text/javascript" src="js/kodego.js"></script>
+    </head>
+    <body>
+
+        <h2>https://devdocs.io/javascript/</h2>
+
+        <input type="text" id="first_number" value="" placeholder="Input First Value"/>
+        <input type="text" id="second_number" value="" placeholder="Input Second Value"/>
+
+        <button onclick="doCheck()">Do Check <img src="C:\Users\mita\htmlcss\Images photo\buzz_lightyear.jpg" width="100"/></button>
+
+        <div id="result"></div>
+        <div id="result2"></div>
+        <script>
+            function doCheck(){
+                let value1 = parseInt(document.getElementById('first_number').value);
+                let value2 = parseInt(document.getElementById('second_number').value);
+
+                if (value1 == value2){
+                    document.getElementById('result').innerHTML="Value " + value1 +" is equal to Value"+ value2 +".";
+                }else if(value1 < value2){
+                    document.getElementById('result').innerHTML="Value " + value1 +" is less than Value"+ value2 +".";
+                }else{
+                    document.getElementById('result').innerHTML="Value " + value1 +" is greater than Value"+ value2 +".";
+                }
+                document.getElementById('result2').innerHTML = "TOTAL " + (value1 + value2) + ""; 
+            }
+        </script>
+    </body>
+
+</html>

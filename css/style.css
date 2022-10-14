@@ -16,7 +16,8 @@ header {
    border-top: 50px;
    left: 0px;
    right: 0px; 
-   top: 0px; 
+   top: 0px;
+   z-index: 99999;
 }
 
 .banner{
@@ -45,7 +46,7 @@ h2{
 h3{
    color: rgb(15, 14, 15);
    text-align: center;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 section.about-me{
    margin-top: 20px;
@@ -146,7 +147,7 @@ section>.d-inline{
 
 section.my-portfolio div.d-flex{
    background-color: bisque;
-   line-height: 50px;
+   line-height: 25px;
    height: 100%;
    justify-content: center;
    padding: 1px;
