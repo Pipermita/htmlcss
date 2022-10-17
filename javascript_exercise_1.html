@@ -40,12 +40,12 @@
 
         <script>
             function CheckLetter(){
-                let value1 = parseInt(document.getElementById("single_char").value);
+                let value1 = (document.getElementById('single_char' ).value);
                                 
-                if (value1 == 'a' || value1 == 'e' || value1 == 'i' || value1 == 'o' || value1 == 'u' || value1 == 'A' || value1 == 'E' || value1 == 'I' || value1 == 'O' || value1 == 'U') {
-                    document.getElementById("result2").innerHTML="Vowel";
-                }else {
-                    document.getElementById("result2").innerHTML="Consonant";
+                if (value1 == 'a' || value1 == 'e' || value1 == 'i' || value1 == 'o' || value1 == 'u' || value1 == 'A' || value1 == 'E' || value1 == 'I' || value1 == 'O' || value1 == 'U'){
+                    document.getElementById("result2").innerHTML='Vowel';
+                }else{
+                    document.getElementById("result2").innerHTML='Consonant';
                 }
             }
         </script>
