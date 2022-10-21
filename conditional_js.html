@@ -17,6 +17,14 @@
 
         <div id="result"></div>
         <div id="result2"></div>
+
+        <h3>SWITCH CASE</h3> 
+        <input type="text" id="flower_name" value="" placeholder="" onkeyup="onkeyupHandler()"/>
+        <div id="result3"></div>
+
+        <input type="text" id="month_name" value="" placeholder="" onkeyup="onkeyupHandler()"/>
+        <div id="result3"></div>
+
         <script>
             function doCheck(){
                 let value1 = parseInt(document.getElementById('first_number').value);
@@ -31,6 +39,40 @@
                 }
                 document.getElementById('result2').innerHTML = "TOTAL " + (value1 + value2) + ""; 
             }
+
+            function onkeyupHandler(){
+                let flower = document.getElementById("flower_name").value;
+                document.getElementById("result3").innerHTML = flower + "s are " + getFlowerColor(flower);    
+            }
+
+            //value of X is precise
+
+            switch (x){
+                case 1:
+                case 3:
+                case 5:
+                case 15: //if(x == 1 || x == 3 || x == 5 || x == 15)
+                    // do statement
+                    break;
+                case 2:
+                    // do statement
+                    break;
+                case 4:
+                    // do statement
+                    break;
+                case 6:
+                    // do statement
+                    break;
+                case 7:
+                    // do statement
+                    break;
+                case 8:
+                case 9:
+                    // do statement
+                    break;
+                case 10:
+           }
+
         </script>
     </body>
 

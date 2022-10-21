@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Javascript Exercise 2</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+            <link href="css/bootstrap.min.css" rel="stylesheet"/>
+            <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+            <script type="text/javascript" src="js/kodego.js"></script>
+        </head>
+        <body>
+            <h1>Javascript Exercise 2</h1>
+            <h2>Machine 1</h2>
+    
+            <input type="text" id="letter" value="" placeholder="Input Letter" maxlength="1" onkeypress="getLetterAssignment()"/> 
+            <div id="result1"></div>
+    
+            <script>
+                function getLetterAssignment(){
+                    let letter = document.getElementById("letter").value;
+
+                    switch(letter){
+                        case "a":
+                        case "e":
+                        case "i":
+                        case "o":
+                        case "u":
+                        case "A":
+                        case "E":
+                        case "I":
+                        case "O":
+                        case "U":
+                            document.getElementById("result1").innerHTML = "Vowel";
+                            break;
+                        default:
+                            document.getElementById("result1").innerHTML = "Consonant";
+                            break;
+                    }                   
+                }
+            </script>
+    
+            <h2>Machine 2</h2>
+    
+            <input type="number" id="number1" placeholder="Input number"/>
+            <input type="number" id="number2" placeholder="Input number"/>
+            <div id="result2"></div>
+
+            <div>   
+                <button onclick="CheckOperation()" value="+">Add</button>  
+                <button onclick="CheckOperation()" value="-">Subtract</button>
+                <button onclick="CheckOperation()" value="*">Multiply</button>
+                <button onclick="CheckOperation()" value="/">Divide</button>
+                <button onclick="CheckOperation()" value="=">Equals</button>
+            </div>      
+
+            <script>
+                function CheckOperation(onclick){
+                  let number1 = +document.getElementById("number1").value;
+                  let number2 = +document.getElementById("number2").value;
+                  let operation = onclick.getElementById("value");
+                  
+                  switch (operation) {
+                    case "+":
+                        document.getElementById("result2").value = number1 + number2;
+                        break;
+                    case "-":
+                        document.getElementById("result2").value = number1 - number2;
+                        break;
+                    case "*":
+                        document.getElementById("result2").value = number1 * number2;
+                        break;
+                    case "/":
+                        document.getElementById("result2").value = number1 / number2;
+                        break;
+                    default:
+                        document.getElementById("result2").value = number1 = number2;
+                        break;
+                  }
+            }
+            </script>   
+        </body>   
+    </html>
