@@ -42,42 +42,44 @@
     
             <h2>Machine 2</h2>
     
-            <input type="number" id="number1" placeholder="Input number"/>
-            <input type="number" id="number2" placeholder="Input number"/>
+            <input type="number" name="number1" value="" placeholder="Input number1"/>
+            <input type="number" name="number2" value="" placeholder="Input number2"/>
             <div id="result2"></div>
 
             <div>   
-                <button onclick="CheckOperation()" value="+">Add</button>  
-                <button onclick="CheckOperation()" value="-">Subtract</button>
-                <button onclick="CheckOperation()" value="*">Multiply</button>
-                <button onclick="CheckOperation()" value="/">Divide</button>
-                <button onclick="CheckOperation()" value="=">Equals</button>
+                <button class="button" id="plus" data-operator="+" onclick="doComputeValue(event)">+</button>  
+                <button class="button" id="minus" data-operator="-" onclick="doComputeValue(event)">-</button>
+                <button class="button" id="multiply" data-operator="*" onclick="doComputeValue(event)">*</button>
+                <button class="button" id="divide" data-operator="/" onclick="doComputeValue(event)">/</button>
+                <button class="button" id="equals" data-operator="=" onclick="doComputeValue(event)">=</button>
             </div>      
 
             <script>
-                function CheckOperation(onclick){
-                  let number1 = +document.getElementById("number1").value;
-                  let number2 = +document.getElementById("number2").value;
-                  let operation = onclick.getElementById("value");
-                  
-                  switch (operation) {
-                    case "+":
-                        document.getElementById("result2").value = number1 + number2;
-                        break;
-                    case "-":
-                        document.getElementById("result2").value = number1 - number2;
-                        break;
-                    case "*":
-                        document.getElementById("result2").value = number1 * number2;
-                        break;
-                    case "/":
-                        document.getElementById("result2").value = number1 / number2;
-                        break;
-                    default:
-                        document.getElementById("result2").value = number1 = number2;
-                        break;
+
+                function doComputeValue(e){
+
+                    let operator = e.currentTarget.getAttribute("data-operator");
+                    let value1 = parseInt(document.getElementsByName("number1")[0].value);
+                    let value2 = parseInt(document.getElementsByName("number2")[0].value);
+
+                    switch (operator) {
+                        case "+":
+                            document.getElementById("result2").innerHTML = value1 + value2;
+                            break;
+                        case "-":
+                            document.getElementById("result2").innerHTML = value1 - value2;
+                            break;
+                        case "*":
+                            document.getElementById("result2").innerHTML = value1 * value2;
+                            break;
+                        case "/":
+                            document.getElementById("result2").innerHTML = value1 / value2;
+                            break;
+                        default:
+                            document.getElementById("result2").innerHTML = "Not Applicable";
+                            break;
+                    };
                   }
-            }
             </script>   
         </body>   
     </html>

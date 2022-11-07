@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>ReactJS Exercise 1</title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+            <link href="css/bootstrap.min.css" rel="stylesheet"/>
+            <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+            <script type="text/javascript" src="js/kodego.js"></script>
+        </head>
+        <body>
+            <h1>ReactJS Exercise 1</h1>
+
+            <div id="result"></div>
+            
+            <script>
+            
+            class Furniture{
+                constructor(local, imported){
+                    this.local = local;
+                    this.imported = imported;
+                }
+            }
+
+            class Chair extends Furniture{
+                constructor(isLocal){
+                    super("Laguna", "US");
+                    this.isLocal = isLocal;
+                }
+            }
+
+            class DiningChair extends Chair{
+                    constructor(){
+                        super("Binan", "Germany");
+                        this.isImported = isImported;
+                    }
+            }
+
+            class Sofa extends Chair{
+                constructor(isLocal){
+                    super("Binan", "US");
+                    this.isLocal = isLocal;
+                }
+            }
+
+            class Bed extends Furniture{
+                constructor(isImported){
+                    super("Binan", "Germany");
+                    this.isImported = isImported;
+                }
+            }          
+
+            let germanyBed = new Bed(false);
+            document.getElementById("result").innerHTML = germanyBed.local;
+
+            /*let germanyBed = new bed(false);
+            console.log(germanyBed.imported);
+            */
+
+            /*let binanSofa = new chair(true);
+            console.log(binanSofa.isLocal);
+            */
+            
+            </script>
+
+        </body>
+
+    </html>

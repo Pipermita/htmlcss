@@ -22,10 +22,7 @@ function getCalendarMonthDays(monthName){
         case "february":
             return 28;
         default:
-            return 31;
-
-
-        
+            return 31;       
     }
 
 }
@@ -42,4 +39,9 @@ function CheckNumber() {
       case "/":
       return value1 / value2;
     }
+}
+
+
+function doFibonacciSequence(limit){
+
 }

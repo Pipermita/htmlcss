@@ -13,7 +13,10 @@
             <h1>Javascript Exercise 3</h1>
 
             <h2>Machine 1</h2>
+
             <div id="result"></div>
+            <div id="result2"></div>
+
             <script>
                 let staff = [
                     {
@@ -81,32 +84,34 @@
                     }
                 ];
 
-                let age30Above = 0;
+                let getAge = 0;
                 counter = 0;
                 while(counter < staff.length){
 
                     if(staff[counter].age > "30"){
-                        age30Above++;
+                        getAge++;
                     }
 
                     counter++;
                 }
 
-                console.log(age30Above);
+                console.log(getAge);
+                document.getElementById('result').innerHTML = getAge;
 
 
-                let spanishSpeaking = 0;
+                let identifySpanishSpeaking = 0;
                 counter = 0;
                 while(counter < staff.length){
 
                     if(staff[counter].languages > "Spanish"){
-                        spanishSpeaking++;
+                        identifySpanishSpeaking++;
                     }
 
                     counter++;
                 }
 
-                console.log(spanishSpeaking);
+                console.log(identifySpanishSpeaking);
+                document.getElementById('result2').innerHTML = identifySpanishSpeaking;
             
             </script>
 </body>
