@@ -17,51 +17,56 @@
             <script>
             
             class Furniture{
-                constructor(local, imported){
-                    this.local = local;
-                    this.imported = imported;
+                constructor(small, big){
+                    this.small = small;
+                    this.big = big;
                 }
             }
 
             class Chair extends Furniture{
-                constructor(isLocal){
-                    super("Laguna", "US");
-                    this.isLocal = isLocal;
+                constructor(classification, color){
+                    super("LivingRoom", "Beige");
+                    this.classification = classification;
+                    this.color = color;
                 }
             }
 
-            class DiningChair extends Chair{
+                class VictorianSofa extends Chair{
+                        constructor(){
+                            super("WoodMade", "Gold");
+                        }
+                }
+
+                class Futon extends Chair{
                     constructor(){
-                        super("Binan", "Germany");
-                        this.isImported = isImported;
+                        super("Modern", "DarkBlue");
                     }
-            }
-
-            class Sofa extends Chair{
-                constructor(isLocal){
-                    super("Binan", "US");
-                    this.isLocal = isLocal;
                 }
-            }
 
             class Bed extends Furniture{
-                constructor(isImported){
-                    super("Binan", "Germany");
-                    this.isImported = isImported;
+                constructor(size, color){
+                    super("KingSized", "SummerShower");
+                    this.size = size;
+                    this.color = color;
                 }
-            }          
-
-            let germanyBed = new Bed(false);
-            document.getElementById("result").innerHTML = germanyBed.local;
-
-            /*let germanyBed = new bed(false);
-            console.log(germanyBed.imported);
-            */
-
-            /*let binanSofa = new chair(true);
-            console.log(binanSofa.isLocal);
-            */
+            }
             
+                class PosterBed extends Bed{
+                            constructor(){
+                                super("Materials", "Design");
+                            }
+                    }
+                
+                class Canopy extends Bed{
+                        constructor(){
+                            super("Materials", "Design");
+                        }
+                }
+
+            let anyFurniture = new Bed;
+            document.getElementById("result").innerHTML = anyFurniture.big;
+
+                       
             </script>
 
         </body>
